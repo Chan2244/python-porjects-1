@@ -25,7 +25,7 @@ screen.onkey(l_paddle.go_down, "s")
 
 game_is_on = True
 while game_is_on:
-    time.sleep(0.0001)
+    time.sleep(0.1)
     screen.update()
     ball.move()
 
@@ -38,7 +38,7 @@ while game_is_on:
         ball.bounce_x()
 
         #Detect R paddle misses
-    if  ball.xcor() > 380
+    if  ball.xcor() > 380:
         ball.reset_position()
         scoreboard.l_point()
 
